@@ -40,6 +40,13 @@ class MainActivity : ComponentActivity() {
                             drawable = R.drawable.ab1_inversions,
                             text = R.string.ab1_inversions
                         )
+
+                        Spacer(Modifier.height(16.dp))
+
+                        FavoriteCollectionCard(
+                            drawable = R.drawable.fc2_nature_meditations,
+                            text = R.string.fc2_nature_meditations
+                        )
                     }
 
                 }
@@ -117,5 +124,46 @@ fun AlignYourBodyElement(
                 top = 24.dp, bottom = 8.dp
             )
         )
+    }
+}
+
+@Preview(showBackground = true, backgroundColor = 0xFFF0EAE2)
+@Composable
+fun FavoriteCollectionCardPreview() {
+    TutsTheme {
+        FavoriteCollectionCard(
+            text = R.string.fc2_nature_meditations,
+            drawable = R.drawable.fc2_nature_meditations,
+            modifier = Modifier.padding(8.dp)
+        )
+    }
+}
+
+@Composable
+fun FavoriteCollectionCard(
+    @DrawableRes drawable: Int,
+    @StringRes text: Int,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        shape = MaterialTheme.shapes.small,
+        modifier = modifier
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.width(192.dp)
+        ) {
+            Image(
+                painter = painterResource(drawable),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.size(56.dp)
+            )
+            Text(
+                text = stringResource(text),
+                style = MaterialTheme.typography.h6,
+                modifier = Modifier.padding(horizontal = 16.dp)
+            )
+        }
     }
 }
