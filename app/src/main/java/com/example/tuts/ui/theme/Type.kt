@@ -1,5 +1,6 @@
 package com.example.tuts.ui.theme
 
+
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
@@ -11,6 +12,12 @@ val Typography = Typography(
     body1 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
+        fontSize = 16.sp
+    ),
+    h3 = TextStyle(
+        fontSize = 14.sp
+    ),
+    h2 = TextStyle(
         fontSize = 16.sp
     )
     /* Other default text styles to override
