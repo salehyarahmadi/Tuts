@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Tuts"
         tools:targetApi="31">
         <activity
-            android:name=".BaseStateCodelabActivity"
+            android:name=".basestatecodelab.BaseStateCodelabActivity"
             android:exported="true"
             android:label="@string/title_activity_base_state_codelab"
             android:theme="@style/Theme.Tuts">
