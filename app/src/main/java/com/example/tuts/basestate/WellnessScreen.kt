@@ -1,4 +1,4 @@
-package com.example.tuts.basestatecodelab
+package com.example.tuts.basestate
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable

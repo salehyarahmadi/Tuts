@@ -1,4 +1,4 @@
-package com.example.tuts.basestatecodelab
+package com.example.tuts.basestate
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

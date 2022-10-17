@@ -1,4 +1,4 @@
-package com.example.tuts.basestatecodelab
+package com.example.tuts.basestate
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items

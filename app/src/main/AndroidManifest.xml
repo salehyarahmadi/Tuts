@@ -14,15 +14,21 @@
         android:theme="@style/Theme.Tuts"
         tools:targetApi="31">
         <activity
-            android:name=".basestatecodelab.BaseStateCodelabActivity"
+            android:name=".theming.ThemingActivity"
             android:exported="true"
-            android:label="@string/title_activity_base_state_codelab"
+            android:label="Theming"
             android:theme="@style/Theme.Tuts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".basestate.BaseStateCodelabActivity"
+            android:exported="true"
+            android:label="@string/title_activity_base_state_codelab"
+            android:theme="@style/Theme.Tuts">
         </activity>
         <activity
             android:name=".MainActivity"

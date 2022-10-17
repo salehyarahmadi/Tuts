@@ -1,4 +1,4 @@
-package com.example.tuts.basestatecodelab
+package com.example.tuts.basestate
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
